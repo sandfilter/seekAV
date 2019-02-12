@@ -1,0 +1,15 @@
+.upper-img{ overflow: hidden;
+    .img{ border:1px solid $main-border; text-align:center; overflow:hidden; background-color:$main-white; margin-bottom:18px; @include prefixer( box-sizing, border-box, webkit moz o ms spec);
+      img{ width:100%; }
+    }
+        .btn-delete{ float:right; display:none; vertical-align:middle;}
+            .btn-modify{ float:left; display:none;}
+}
+.upload{ display:inline-block;
+    input[type="file"],.file { width: 1px; height: 1px; position: absolute; z-index: -1;}
+        &.not{
+                  .btn-delete,
+                          .btn-modify{ display:block;}
+                                  .btn-up{ display:none;}
+                                      }
+}

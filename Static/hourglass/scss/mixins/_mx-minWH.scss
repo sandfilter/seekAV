@@ -1,0 +1,14 @@
+@mixin min-height($height){
+    min-height: $height;
+    height: auto !important;
+    @if $legacy-support-for-ie {
+        _height: $height;
+    }
+}
+@mixin min-width($width){
+    min-width: $width;
+    width: auto !important;
+    @if $legacy-support-for-ie {
+        _width: $width;
+    }
+}

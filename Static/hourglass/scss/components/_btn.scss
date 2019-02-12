@@ -1,0 +1,7 @@
+.c-btn{ 
+      @include inline-block;
+          @include txt-align; 
+              cursor: pointer;
+                  @include prefixer( box-sizing, border-box, webkit moz o ms spec);
+                      border: none 0;
+}

@@ -1,0 +1,2 @@
+@mixin layer-box($x , $y){ position:fixed; left:50%; top:50%; width: $x; height: $y; margin-left:-$x/2; margin-top:-$y/2; z-index:99; }
+@mixin layer-bg( $opacity ){ position:fixed; left:0; top:0; width:100%; height:100%; z-index:98; background: hsla(0,0%,0%, $opacity); *background:#000; }

@@ -1,0 +1,171 @@
+@charset "utf-8";
+body,
+button,
+input,
+select,
+textarea {
+    font-family: Tahoma, Helvetica, "Microsoft YaHei", Arial, sans-serif;
+    color: $font;
+}
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+th,
+td,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+article,
+aside,
+footer,
+header,
+hgroup,
+nav,
+section,
+menu,
+figure,
+figcaption,
+dialog {
+    line-height: 1;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+    font-weight: normal;
+}
+
+li {
+    list-style: none;
+}
+
+input,
+textarea {
+    outline-style: none;
+}
+
+textarea {
+    resize: none;
+}
+
+article,
+aside,
+footer,
+header,
+hgroup,
+nav,
+section,
+menu {
+    display: block;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+i,
+th,
+var {
+    font-style: normal;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: $font;
+}
+
+a:hover {
+    text-decoration: none;
+    color: $web1
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clear {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.clr {
+    clear: both !important;
+}
+
+.w1190 {
+    width: 1200px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+input::-webkit-input-placeholder {
+    color: #bbb;
+}
+
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #bbb;
+}
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #bbb;
+}
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #bbb;
+}
+
+.ellipsis{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.mul-ellipsis{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; //行数
+    -webkit-box-orient: vertical;
+}

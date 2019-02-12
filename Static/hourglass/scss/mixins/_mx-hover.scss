@@ -1,0 +1,61 @@
+$enable-hover-media-query:false !default;
+@mixin hover{
+    
+    @if $enable-hover-media-query{
+        
+        @media( hover: hover ){
+            
+            &:hover{ @content }
+        }
+    }
+    @else{
+        
+        &:hover{ @content }
+    }
+}
+
+@mixin hoverFocus{
+    
+    @if $enable-hover-media-query{ 
+        
+        &:focus{ @content }
+        @include hover{ @content }
+    }
+    @else{
+        
+        &:focus,
+        &:hover{ @content }
+    }
+}
+
+@mixin plainHoverFocus{
+    
+    @if $enable-hover-media-query{
+        
+        &,
+        &:focus{ @content }
+        @include hover{ @content }
+    }
+    @else{
+        &,
+        &:focus,
+        &:hover{ @content }
+        
+    }
+}
+
+@mixin hoverFocusActive{
+    
+    @if $enable-hover-media-query{
+        
+        &:focus,
+        &:active{ @content }
+        @include hover{ @content }
+    }
+    @else{
+        
+        &:focus,
+        &:active,
+        &:hover{ @content }
+    }
+}

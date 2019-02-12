@@ -1,0 +1,5 @@
+@mixin disabled($bg-color: #eee, $text-color: #999){
+    background-color: $bg-color !important;
+    color: $text-color !important;
+    cursor: not-allowed !important;
+}
